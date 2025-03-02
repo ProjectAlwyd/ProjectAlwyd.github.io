@@ -11,16 +11,16 @@ var blogData;
 function loadBlog(){
     
     
-    console.log(window.location.href);
+    //console.log(window.location.href);
     var fragment = grabFragment()
-    console.log(fragment)
+    //console.log(fragment)
     // load data
     fetch('./data/' + fragment + '.json')
       .then(response => response.json())
       .then(data => {
         // Use the JSON data here
         blogData = data;
-        console.log(blogData.title);
+        //console.log(blogData.title);
 
         document.getElementById("pageTitle").innerHTML = blogData.title;
         document.getElementById("blogDate").innerHTML = blogData.date;
