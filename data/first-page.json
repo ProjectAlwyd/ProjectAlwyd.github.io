@@ -1,7 +1,7 @@
 {
-    "title":"Example Title", 
-    "date": "January 1, 1970",
+    "title":"Welcome to Project Alwyd!", 
+    "date": "March 1, 2025",
     "author": "Cory Nelson",
     "blogImage": "project_logo.png",
-    "blogBody": "<p>Example Body</p><h1>example body</h1><p>example body </p>"
+    "blogBody": "We are a community of developers, artists, and writers dedicated to expanding Quar's digital presence through the creation of mods, fangames, and various utilities. We are interested in both highlighting and promoting existing projects, as well as developing new projects that benefit the Quar community. <br/><br/> We believe that the health of a tabletop game is in its community, and that by increasing ease-of-access into Quar and creating tools and experiences that keep existing fans excited and engaged, we can grow Quar to compete with the most well-known tabletop games on the market. <br/><br/> Project Alwyd is a fan initiative, and is not affiliated with ZombieSmith. Quar is created and owned by Josh Qualtieri & ZombieSmith, and we make no claims to ownership over the IP. <br/><br/> In the language of the Quar, \"Alwyd\" means \"Home.\" It is our hope that all Quar fans can call this community home!"
 }
