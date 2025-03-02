@@ -5,19 +5,36 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-fetch('./data/blogs.json')
-  .then(response => response.json())
-  .then(data => {
-    // Use the JSON data here
-    console.log(data);
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+
+var blogData;
 
 function loadBlog(){
     
-    document.getElementById("pageTitle").innerHTML = "No Data Found";
+    
     console.log(window.location.href);
-    console.log(grabFragment());
+    var fragment = grabFragment()
+    console.log(fragment)
+    // load data
+    fetch('./data/' + fragment + '.json')
+      .then(response => response.json())
+      .then(data => {
+        // Use the JSON data here
+        blogData = data;
+        console.log(blogData.title);
+
+        document.getElementById("pageTitle").innerHTML = blogData.title;
+        document.getElementById("blogDate").innerHTML = blogData.date;
+        document.getElementById("blogAuthor").innerHTML = "Author: " + blogData.author;
+        document.getElementById("blogImage").src = "./assets/" + blogData.blogImage;
+        document.getElementById("blogBody").innerHTML = "<br/>" + blogData.blogBody;
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+      
+      
+      
+      //place data in right spot
+
+
 }
 
 function grabFragment(){
