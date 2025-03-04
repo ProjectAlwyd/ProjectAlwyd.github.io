@@ -16,16 +16,16 @@
   src: url("../utilities/translator/fonts/QuarFontRegular.otf");
 }
 @font-face {
-  font-family: "quarFontRegular";
-  src: url("../utilities/translator/fonts/QuarFontRegular.otf");
+  font-family: "quarFontBold";
+  src: url("../utilities/translator/fonts/QuarFontBold.otf");
 }
 @font-face {
-  font-family: "quarFontRegular";
-  src: url("../utilities/translator/fonts/QuarFontRegular.otf");
+  font-family: "quarFontOutline";
+  src: url("../utilities/translator/fonts/QuarFontOutline.otf");
 }
 @font-face {
-  font-family: "quarFontRegular";
-  src: url("../utilities/translator/fonts/QuarFontRegular.otf");
+  font-family: "quarFontThin";
+  src: url("../utilities/translator/fonts/QuarFontThin.otf");
 }
 
 
