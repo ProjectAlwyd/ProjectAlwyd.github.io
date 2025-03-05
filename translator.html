@@ -48,6 +48,13 @@
                             <p class="card-text" style="text-align:center">Quar Font is available from <a href="https://rhyfler.com/">rhyfler.com</a></p>
                             <div style="margin: auto; width: 50%;">
                                 <textarea name="englishInput" id="quarEnglishInput" cols="40" rows="5" style="max-width: 100%;"></textarea>
+                                <label for="fonts">Choose a style:</label>
+                                <select name="fonts" id="fontsSelect" onchange="changeStyle(this)">
+                                    <option value="quarFontRegular">Quar Regular (default)</option>
+                                    <option value="quarFontBold">Quar Bold</option>
+                                    <option value="quarFontOutline">Quar Outline</option>
+                                    <option value="quarFontThin">Quar Thin</option>
+                                </select>
                             </div>
                             <div class="card-body">
                             <h3 class="card-title" style="text-align:center">Preview Text</h1>
