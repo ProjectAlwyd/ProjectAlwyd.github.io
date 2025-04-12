@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- REQUIRES HTML2CANVAS?-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="A web tool for rolling dice for the tabletop wargame Quar." />
+        <meta name="author" content="" />
+        <title>Quar Translator</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Project Alwyd</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page header with logo and tagline-->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="fw-bolder"><b>Quar Dice Roller</b></h1>
+                    <p class="lead mb-0">Alykinder says: "Gamblin's no good!"</p>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-8">
+                    <!-- Featured blog post-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p class="card-text" style="text-align:center">Quar Font is available from <a href="https://rhyfler.com/">rhyfler.com</a></p>
+                            <div style="margin: auto; width: 50%;">
+                                <textarea name="englishInput" id="quarEnglishInput" cols="40" rows="5" style="max-width: 100%;"></textarea>
+                                <label for="fonts">Choose a style:</label>
+                                <select name="fonts" id="fontsSelect" onchange="changeStyle(this)">
+                                    <option value="quarFontRegular">Quar Regular (default)</option>
+                                    <option value="quarFontBold">Quar Bold</option>
+                                    <option value="quarFontOutline">Quar Outline</option>
+                                    <option value="quarFontThin">Quar Thin</option>
+                                </select>
+                            </div>
+                            <div class="card-body">
+                            <h3 class="card-title" style="text-align:center">Preview Text</h1>
+                                <p class="card-text" style="text-align:center;font-family: 'quarFontRegular';font-size:40px" id="quarText"></p>
+                            </div>
+                            <!--Information about ranks?-->
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Disclaimer</div>
+                        <div class="card-body">
+                            <p>Quar is created by Joshua Qualtieri and owned by Zombiesmith. Please support the official developers.</p>
+                            <ul>
+                                <li><a href="https://zombiesmith.com">ZombieSmith Official Website</a></li>
+                                <li><a href="https://wargamesatlantic.com/">Wargames Atlantic</a></li>
+                                <li><a href="https://www.strangeplastic.com/">Strange Plastic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Thank you for supporting Quar!</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="./utilities/translator/js/translator.js"></script>
+        
+    </body>
+    <script>
+
+    </script>
+</html>
